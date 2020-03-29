@@ -1,0 +1,40 @@
+.header
+  position: absolute
+  padding-top: 20px
+  padding-bottom: 150px
+  top: 0
+  width: 100%
+  box-shadow: inset 0px 150px 70px -89px rgba(0,0,0,0.75)
+  .logo
+    width: 205px
+    +r($small)
+      width: 100%
+    img
+      width: 100%
+      display: block
+  &__menu
+    ul
+      display: flex
+      justify-content: space-between
+      li:last-child
+        a
+          i
+            color: $yellow
+            font-size: 22px
+      a
+        color: white
+        text-decoration: none
+        transition: border 0.3s
+      li
+        &.active, &:hover
+          a
+            border-bottom: 2px solid $yellow
+.page
+  .header
+    position: static
+    padding-bottom: 20px
+    background-color: black
+      
+
+
+  

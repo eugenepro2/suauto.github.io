@@ -1,0 +1,73 @@
+@font-face {
+  font-family: "iconfont";
+  src: url('../fonts/iconfont.eot');
+  src: url('../fonts/iconfont.eot?#iefix') format('eot'),
+    url('../fonts/iconfont.woff2') format('woff2'),
+    url('../fonts/iconfont.woff') format('woff'),
+    url('../fonts/iconfont.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+$icon-arrow: "\EA01";
+$icon-calendar: "\EA02";
+$icon-cancel: "\EA03";
+$icon-car: "\EA04";
+$icon-comfort: "\EA05";
+$icon-confirm: "\EA06";
+$icon-easy: "\EA07";
+$icon-facebook: "\EA08";
+$icon-instagram: "\EA09";
+$icon-join: "\EA0A";
+$icon-mark: "\EA0B";
+$icon-menu: "\EA0C";
+$icon-plane: "\EA0D";
+$icon-point-on: "\EA0E";
+$icon-point: "\EA0F";
+$icon-profit: "\EA10";
+$icon-search: "\EA11";
+$icon-shield: "\EA12";
+$icon-star: "\EA13";
+$icon-user: "\EA14";
+$icon-users: "\EA15";
+$icon-vk: "\EA16";
+
+
+%icon {
+  font-family: "iconfont";
+  font-style: normal;
+  font-weight: normal;
+  text-rendering: auto;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon {
+  @extend %icon;
+  display: inline-block;
+}
+
+.icon-arrow:before { content: $icon-arrow; }
+.icon-calendar:before { content: $icon-calendar; }
+.icon-cancel:before { content: $icon-cancel; }
+.icon-car:before { content: $icon-car; }
+.icon-comfort:before { content: $icon-comfort; }
+.icon-confirm:before { content: $icon-confirm; }
+.icon-easy:before { content: $icon-easy; }
+.icon-facebook:before { content: $icon-facebook; }
+.icon-instagram:before { content: $icon-instagram; }
+.icon-join:before { content: $icon-join; }
+.icon-mark:before { content: $icon-mark; }
+.icon-menu:before { content: $icon-menu; }
+.icon-plane:before { content: $icon-plane; }
+.icon-point-on:before { content: $icon-point-on; }
+.icon-point:before { content: $icon-point; }
+.icon-profit:before { content: $icon-profit; }
+.icon-search:before { content: $icon-search; }
+.icon-shield:before { content: $icon-shield; }
+.icon-star:before { content: $icon-star; }
+.icon-user:before { content: $icon-user; }
+.icon-users:before { content: $icon-users; }
+.icon-vk:before { content: $icon-vk; }

@@ -1,0 +1,65 @@
+.category
+  h2
+    margin-top: 55px
+    margin-bottom: 40px
+    font-size: 36px
+    text-align: center
+    font-weight: 500
+  +r($small)
+    overflow: hidden
+  .container
+    +r($small)
+      padding: 0
+  &__block
+    height: 388px
+    width: 292px
+    overflow: hidden
+    color: white
+    padding: 20px 30px
+    transition: all 1s cubic-bezier(0.97, 0, 0.14, 1)
+    cursor: pointer
+    text-decoration: none
+    +r($large)
+      width: 33%
+    +r($medium)
+      width: 50%
+    +r($small)
+      width: 100%
+    img
+      position: relative
+    h3,p
+      position: relative
+      z-index: 10
+    &:hover
+      width: 500px
+      text-decoration: none
+      color: white
+  .black
+    background-color: #242424
+    img
+      left: -400px
+      bottom: 40px
+      transition: all 1s cubic-bezier(0.97, 0, 0.14, 1)
+    &:hover
+      img
+        left: -200px
+  .yellow
+    background-color: $yellow
+    color: black
+    img
+      left: -20px
+      bottom: 30px
+  .white
+    background-color: #d1d5d6
+    color: black
+    flex: auto
+    img
+      left: -10px
+      bottom: 30px
+  .red
+    background-color: #f6001d
+  .blue
+    background-color: #74a0c7
+  .grey
+    flex: auto
+    background-color: #414751

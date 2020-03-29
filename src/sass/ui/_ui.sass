@@ -1,0 +1,269 @@
+body
+  font-family: 'Circe'
+
+br
+  +r($small)
+    display: none
+
+.heading
+  h2
+    font-family: Druk-Wide
+    font-size: 50px
+    text-align: center
+    +r($small)
+      font-size: 24px
+    &.black
+      color: black
+    &.white
+      color: white
+    &.yellow
+      color: $yellow
+
+//Кнопки
+.btn
+  background: $yellow
+  border-radius: 30px
+  font-size: 27px
+  color: black
+  display: inline-flex
+  align-items: center
+  justify-content: center
+  padding: 0 30px
+  height: 62px
+  font-weight: 500
+  position: relative
+  z-index: 10
+  +r($large)
+    width: initial
+  +r($medium)
+    font-size: 24px
+  +r($small)
+    font-size: 16px
+  i
+    font-size: 35px
+    margin-right: 15px
+  &-primary
+    box-shadow: 0px 10px 0px 0px rgba(0,0,0,0.1)
+    color: #010000
+    border: none
+    img
+      margin-right: 15px
+    &:hover, &:focus
+      box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.1)
+      background: $yellow
+      color: black
+  &-purple
+    background: $purple
+    color: white
+    &:hover
+      background: $purple
+      color: white
+  &-search
+    box-shadow: 0px 10px 0px 0px rgb(0,0,0)
+    +r($small)
+      width: 200px
+    i
+      font-size: 24px
+      color: black
+      margin-right: 16px 
+    &:hover
+      box-shadow: 0px 0px 0px 0px rgb(0,0,0)
+  &-create
+    width: 360px
+    box-shadow: 0px 10px 0px 0px rgba(0,0,0,0.1)
+    color: #010000
+    +r($small)
+      width: 100%
+    &:hover
+      box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.1)
+  &-info
+    width: 420px
+    background-color: #6b2ad0
+    box-shadow: 0px 10px 0px 0px rgba(0,0,0,0.1)
+    color: white
+    &:hover
+      background-color: #6b2ad0
+      box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.1)
+  &-catalog
+    width: 385px
+    box-shadow: 0px 10px 0px 0px rgba(0,0,0,0.1)
+    color: #010000
+    img
+      margin-right: 15px
+    &:hover
+      box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.1)
+
+
+//Форма
+.form
+  display: flex
+  width: 100%
+  justify-content: space-between
+  +r(1200)
+    flex-direction: column
+    align-items: center
+  input, label
+    border-radius: 30px
+    background-color: #ffffff
+    width: 100%
+    height: 62px
+    padding: 0 20px
+    padding-left: 60px
+  &__search
+    width: 480px
+    position: relative
+    input
+      position: relative
+      z-index: 13
+    &__block
+      position: absolute
+      border-radius: 30px
+      height: 265px
+      overflow: scroll
+      top: 0
+      opacity: 0
+      width: 100%
+      background: $yellow
+      transition: opacity 0.3s ease
+      padding: 75px 40px 25px 60px
+      z-index: 1
+      ul
+        li
+          line-height: 1.68
+          font-weight: 500
+          font-size: 19px
+          cursor: pointer
+          a
+            color: black
+            &:hover
+              color: black
+      &.active
+        opacity: 1
+        z-index: 12   
+  &__date
+    width: 370px
+    position: relative
+    input
+      opacity: 0
+      position: absolute
+      width: 100%
+      left: 60px
+      height: 100%
+      +r($small)
+        left: 0
+    label
+      padding: 0
+      cursor: pointer
+      display: flex
+      align-items: center
+      padding-left: 70px
+      p
+        font-size: 21px
+        font-weight: 500
+        white-space: nowrap
+      span
+        border-left: 1px solid black
+        opacity: 0.3
+        height: 50px
+        margin: 0 15px
+        display: none
+        &.active
+          display: block
+  &__item
+    position: relative
+    +r($large)
+      margin-bottom: 20px
+    +r($small)
+      width: 90%
+    i
+      position: absolute
+      top: 50%
+      transform: translateY(-50%)
+      font-size: 26px
+      color: $yellow
+      left: 23px
+      z-index: 14
+  &__contact
+    input, textarea
+      border: 2px solid $yellow
+      padding: 0 20px
+      height: 60px
+      width: 100%
+      margin-bottom: 15px
+      &::placeholder
+        color: black
+    textarea
+      height: 125px
+      padding-top: 20px
+    span
+      display: flex
+      width: 100%
+      justify-content: flex-end
+.checkbox
+  display: flex
+  align-items: center
+  margin-bottom: 25px
+  .label
+    display: block
+    width: 32px
+    height: 32px
+    border: 2px solid $yellow
+    position: relative
+    &:before
+      content: ''
+      top: -4px
+      left: 1px
+      position: absolute
+      border-left: 3px solid black
+      border-bottom: 3px solid black
+      transform: rotate(-48deg)
+      width: 35px
+      height: 15px
+      opacity: 0
+      transition: opacity 0.3s
+  input
+    display: none
+  input:checked + .label:before
+    opacity: 1
+  .label-for
+    margin-left: 15px
+    font-size: 14px
+    font-weight: 500
+
+
+
+
+//Интро
+.page__intro
+  padding: 200px 0 75px
+  position: relative
+  +r($small)
+    padding-top: 100px
+  &:before
+    content: ''
+    background-color: rgba($yellow, 0.8)
+    width: 100%
+    height: 100%
+    display: block
+    position: absolute
+    top: 0
+  div
+    position: relative
+    z-index: 10
+  h1
+    font-size: 64px
+    font-family: Druk-Wide
+    text-align: center
+    color: white
+    margin-bottom: 30px
+    text-transform: uppercase
+    +r($small)
+      font-size: 32px
+  p
+    font-size: 32px
+    text-align: center
+    color: black
+    margin-bottom: 45px
+    font-weight: bold
+    +r($small)
+      font-size: 22px

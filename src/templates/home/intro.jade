@@ -1,0 +1,38 @@
+section.intro(style="background-image: url('img/intro-bg.jpg')")
+  .container
+    .row
+      h2 Делиться просто.
+      form.form
+        .form__search.form__item
+          i.icon.icon-mark
+          input#search(type="text", name="search", autocomplete="off" required)
+          .form__search__block
+            ul#search_ul
+              li 
+                a Москва, Арбарт 13
+              li 
+                a Химки, ул. Правды Николая Ооржака 23
+              li 
+                a Люберцы, пр-кт Сахорова-соленова 321, к. 2
+              li 
+                a Москва, Арбарт 13
+              li 
+                a Химки, ул. Правды Николая Ооржака 23
+              li 
+                a Люберцы, пр-кт Сахорова-соленова 321, к. 2
+              li 
+                a Москва, Арбарт 13
+              li 
+                a Химки, ул. Правды Николая Ооржака 23
+              li 
+                a Люберцы, пр-кт Сахорова-соленова 321, к. 2
+        .form__date.form__item
+          i.icon.icon-calendar
+          label
+            p.from
+            span
+            p.to
+            input#date.datepicker-here(type='text', data-timepicker="true", data-range='true', data-multiple-dates-separator=' - ' required)
+        button.btn.btn-search(type="submit")
+          i.icon.icon-search
+          | найти авто

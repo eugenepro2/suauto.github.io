@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Index Page</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#fff">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/css/swiper.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/air-datepicker/2.2.3/css/datepicker.min.css">
+    <link rel="stylesheet" media="all" href="css/app.css">
+  </head>
+  <body>
+    <!--BEGIN out-->
+    <div id="menu" class="slideout-menu">
+      <ul>
+        <li class="active"><a href="#">О нас</a></li>
+        <li><a href="#">Арендовать</a></li>
+        <li><a href="#">Поделиться</a></li>
+        <li><a href="#">Контакты</a></li>
+        <li><a href="#"><i class="icon icon-user"></i></a></li>
+      </ul>
+    </div>
+    <div id="panel">
+      <!--BEGIN header-->
+      <header class="header">
+        <div class="container">
+          <div class="row align-items-center h-100 flex-row-reverse flex-sm-row">
+            <div class="col-xl-7 col-md-5 col-6">
+              <div class="logo"><img src="img/logo.png" alt=""></div>
+            </div>
+            <div class="col-6 d-block d-sm-none">
+              <div class="open-menu"><i class="icon icon-menu"></i></div>
+            </div>
+            <div class="col-xl-5 col-md-7 d-none d-sm-block">
+              <nav class="header__menu">
+                <ul>
+                  <li class="active"><a href="#">О нас</a></li>
+                  <li><a href="booking.html">Арендовать</a></li>
+                  <li><a href="#">Поделиться</a></li>
+                  <li><a href="#">Контакты</a></li>
+                  <li><a href="#"><i class="icon icon-user"></i></a></li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </header>
+      <!--END header-->
+      <section style="background-image: url('img/intro-bg.jpg')" class="intro">
+        <div class="container">
+          <div class="row">
+            <h2>Делиться просто.</h2>
+            <form class="form">
+              <div class="form__search form__item"><i class="icon icon-mark"></i><input id="search" type="text" name="search" autocomplete="off" required>
+                <div class="form__search__block">
+                  <ul id="search_ul">
+                    <li> <a>Москва, Арбарт 13</a></li>
+                    <li> <a>Химки, ул. Правды Николая Ооржака 23</a></li>
+                    <li> <a>Люберцы, пр-кт Сахорова-соленова 321, к. 2</a></li>
+                    <li> <a>Москва, Арбарт 13</a></li>
+                    <li> <a>Химки, ул. Правды Николая Ооржака 23</a></li>
+                    <li> <a>Люберцы, пр-кт Сахорова-соленова 321, к. 2</a></li>
+                    <li> <a>Москва, Арбарт 13</a></li>
+                    <li> <a>Химки, ул. Правды Николая Ооржака 23</a></li>
+                    <li> <a>Люберцы, пр-кт Сахорова-соленова 321, к. 2</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="form__date form__item"><i class="icon icon-calendar"></i><label>
+                  <p class="from"></p><span></span>
+                  <p class="to"></p><input id="date" type="text" data-timepicker="true" data-range="true" data-multiple-dates-separator=" - " required class="datepicker-here">
+                </label></div><button type="submit" class="btn btn-search"><i class="icon icon-search"></i>найти авто</button>
+            </form>
+          </div>
+        </div>
+      </section>
+      <section class="category">
+        <div class="container">
+          <div class="row">
+            <div class="col d-flex flex-wrap"><a href="#" class="category__block black">
+                <h3>#поделам</h3>
+                <p>бизнес и премиум<br>авто</p><img src="img/category/black.png" alt="">
+              </a><a href="#" class="category__block yellow">
+                <h3>#просто</h3>
+                <p>удобные<br>и экономичные</p><img src="img/category/yellow.png" alt="">
+              </a><a href="#" class="category__block white">
+                <h3>#длягруза</h3>
+                <p>вместительные</p><img src="img/category/white.png" alt="">
+              </a><a href="#" class="category__block red">
+                <h3>#настиле</h3>
+                <p>спорт кары <br>и лакшери авто</p><img src="img/category/red.png" alt="">
+              </a><a href="#" class="category__block blue">
+                <h3>#наотдых</h3>
+                <p>отправиться<br>в путешествие</p><img src="img/category/blue.png" alt="">
+              </a><a href="#" class="category__block grey">
+                <h3>#сдрузьями</h3>
+                <p>от 6 мест</p><img src="img/category/grey.png" alt="">
+              </a></div>
+          </div>
+        </div>
+      </section>
+      <section class="how">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-12">
+              <h2 class="text-center">Как работает наш сервис</h2>
+            </div>
+            <div class="col-md-10"><iframe width="100%" height="500" src="https://www.youtube.com/embed/nK2LWp4Irzg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></div>
+          </div>
+        </div>
+      </section>
+      <section class="create">
+        <div class="container">
+          <div class="row">
+            <div class="col">
+              <h2>Мы создаем сообщество, в котором каждый может арендовать или поделиться машиной, удобно, просто, безопасно.</h2>
+            </div>
+          </div>
+        </div>
+        <div style="background-image: url('img/create-bg.png')" class="create__bg">
+          <div class="container">
+            <div class="row align-items-center">
+              <div class="offset-md-7 col-md-4 d-flex flex-column align-items-center">
+                <h3>Зарабатывайте на вашем авто до 50 000 рублей в месяц.</h3><a href="#" class="btn btn-create">разместить авто</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="mobile">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-lg-5 col-md-12">
+              <h2>Просто и удобно.</h2>
+              <p>Скачай приложение. Зарегистрируйся и выбирай авто по своему вкусу и запросу.</p>
+              <div class="d-flex"><img src="img/app-store.png" alt=""><img src="img/google-play.png" alt=""></div>
+            </div>
+            <div class="col-lg-7 col-md-12"><img src="img/phone.png" alt="" class="d-none d-sm-block"></div>
+          </div>
+        </div>
+      </section>
+      <section class="catalog">
+        <div class="container">
+          <div class="row">
+            <div class="col position-relative">
+              <h2 class="text-center">Авто в аренду</h2>
+              <div class="swiper-container">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide"><a href="#" class="catalog__block">
+                      <div class="catalog__block__image"><img src="img/car.jpg" alt=""></div>
+                      <div class="catalog__block__content">
+                        <h3>BMW M3</h3>
+                        <p>1000 ₽/сутки</p>
+                      </div>
+                    </a></div>
+                  <div class="swiper-slide"><a href="#" class="catalog__block">
+                      <div class="catalog__block__image"><img src="img/car.jpg" alt=""></div>
+                      <div class="catalog__block__content">
+                        <h3>BMW M3</h3>
+                        <p>1000 ₽/сутки</p>
+                      </div>
+                    </a></div>
+                  <div class="swiper-slide"><a href="#" class="catalog__block">
+                      <div class="catalog__block__image"><img src="img/car.jpg" alt=""></div>
+                      <div class="catalog__block__content">
+                        <h3>BMW M3</h3>
+                        <p>1000 ₽/сутки</p>
+                      </div>
+                    </a></div>
+                </div>
+              </div>
+              <div class="swiper-button-prev d-none d-sm-block"><i class="icon icon-arrow"></i></div>
+              <div class="swiper-button-next d-none d-sm-block"><i class="icon icon-arrow"></i></div>
+              <div class="d-flex justify-content-center"><a href="#" class="btn btn-catalog"> <img src="img/icon-car.png" alt="">подобрать автомобиль</a></div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="info">
+        <div class="container">
+          <div class="info__block">
+            <p>Выходя из дома открыть приложение и выбрать тот автомобиль, на котором сегодня поедешь: по делам на черном Mercedes E350, на свидание с ярко синим кабрио BMW или в веселое путешествие с друзьями на Mini Countryman!</p>
+            <p class="yellow">Добро пожаловать в SOAUTO.<br>Мы превращаем автомобильные мечты в реальность!</p><a href="#" class="btn btn-info">стать частью сообщества</a>
+          </div>
+        </div>
+      </section>
+      <!--BEGIN header-->
+      <footer class="footer">
+        <div class="footer__top">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-6 d-flex flex-column">
+                <h2>О нас</h2>
+                <p>Мы создаем современное сообщество, которое делает автомобиль доступным и полезным для каждого участника.</p>
+                <p class="last">ООО “Соавто”, Москва, проспект Мира 3, оф. 303</p>
+              </div>
+              <div class="col-md-4 offset-md-2 d-flex flex-wrap justify-content-between">
+                <h2 class="w-100">Узнай больше</h2>
+                <ul>
+                  <li><a href="#">Как это работает?</a></li>
+                  <li><a href="#">Поделиться авто</a></li>
+                  <li><a href="#">Арендовать авто</a></li>
+                  <li><a href="#">Доверие и защита</a></li>
+                </ul>
+                <ul>
+                  <li><a href="#">Гайд для владельца</a></li>
+                  <li><a href="#">Гайд для арендатора</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer__bottom">
+          <div class="container">
+            <div class="row">
+              <div class="col d-flex justify-content-between flex-column flex-sm-row">
+                <div class="logo"><img src="img/logo-black.png" alt=""></div>
+                <div class="coopyright">2019 (c) Россия, Москва</div><a href="#">Пользовательское соглашение</a><a href="#">Политика конфиденциальности</a>
+                <div class="social"><a href="#"><i class="icon icon-facebook"></i></a><a href="#"><i class="icon icon-instagram"></i></a><a href="#"><i class="icon icon-vk"></i></a></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <!--END footer-->
+    </div>
+    <!--END out-->
+    <!--LOAD SCRIPTS-->
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slideout/1.0.1/slideout.min.js"></script>
+    <script src="https://unpkg.com/dayjs"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/js/swiper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/air-datepicker/2.2.3/js/datepicker.min.js"></script>
+    <script type="text/javascript" src="js/app.js"></script>
+  </body>
+</html>

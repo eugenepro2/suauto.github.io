@@ -1,0 +1,56 @@
+// done by riverco.de
+@import helpers/all
+@import generated/iconfont
+@import generated/sprite-svg
+@import generated/sprite-png
+
+
+@import ui/all
+@import home/all
+@import pages/booking
+@import pages/hand-over
+@import pages/how-it-works
+@import pages/contact
+
+.open-menu
+  display: flex
+  i
+    color: white
+    font-size: 25px
+.slideout-menu
+  position: fixed
+  top: 0
+  bottom: 0
+  width: 256px
+  min-height: 100vh
+  overflow-y: scroll
+  -webkit-overflow-scrolling: touch
+  z-index: 0
+  display: none
+  ul
+    padding-left: 20px
+    li
+      line-height: 2
+      a
+        color: black
+        font-size: 26px
+
+.slideout-menu-left
+  left: 0
+
+.slideout-menu-right
+  right: 0
+
+.slideout-panel
+  position: relative
+  z-index: 1
+  will-change: transform
+  background-color: #FFF
+  min-height: 100vh
+
+.slideout-open
+  overflow: hidden
+  body, .slideout-panel
+    overflow: hidden
+  .slideout-menu
+    display: block

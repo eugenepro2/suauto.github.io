@@ -1,0 +1,60 @@
+---
+title: Hand-Over Page
+bodyClass: page
+---
+extends layouts/_layout
+block content
+  .contact__page
+    section.contact__page__intro
+      .container
+        .row
+          .col-12
+            h1 — Если у вас <br>возникли вопросы,<br> спрашивайте!
+            p Вы можете связаться с нами удобным для вас способом:
+    section.contact__page__form
+      .container
+        .row
+          .col-lg-2
+            .contact__page__form__block
+              i.icon.icon-car
+              p напишите нам в Whatsapp на номер:
+              a(href="tel:+7 999 999 99 99") +7 999 999 99 99
+          .col-lg-2.offset-lg-1
+            .contact__page__form__block
+              i.icon.icon-car
+              p позвонитьте на горячую линию:
+              a(href="tel:8 800 551 53 01") 8 800 551 53 01
+          .col-lg-6.offset-lg-1
+            .contact__page__form__block
+              i.icon.icon-car
+              p оставьте свой вопрос в форме ниже и мы ответим вам на email.
+              form.form__contact
+                input(type="text", name="name" placeholder="Тема*")
+                textarea(name="message") Ваше сообщение
+                input(type="tel", name="phone" placeholder="телефон*")
+                input(type="email", name="email" placeholder="email*")
+                span * – обязательное поле 
+                .checkbox
+                  input#ckeckbox(type="checkbox", name="checkbox" checked)
+                  label.label(for="ckeckbox")
+                  label.label-for(for="ckeckbox") я не робот и соглашаюсь с обработкой данных.
+                button.btn.btn-primary.btn-purple(type="submit") отправить вопрос
+
+
+    section.quote.black
+      .container
+        .row
+          .col-12
+            p Конструктивная обратная связь способна изменить мир к лучшему и сделать наше сообщество еще больше и полезнее каждому.
+            p.small Иван Ершов, креативный директор SOAUTO
+    section.contact__page__info
+      .container
+        .row
+          .col-lg-7
+            h3 Реквизиты компании:
+            p.font-weight-bold ООО "СОАВТО"
+            p ОГРН 1197746281116    ИНН 7724473283    КПП 772401001
+            p 115230, г. Москва, проезд Хлебозаводский, 7с9
+          .col-lg-2.offset-lg-2
+            img(src="img/logo.svg", alt="")
+    section.contact__page__map(style="background-image: url('img/map.jpg')")

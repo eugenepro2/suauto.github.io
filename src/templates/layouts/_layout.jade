@@ -1,0 +1,38 @@
+include _mixins
+doctype html
+html
+  head
+    include _head
+
+  body(class=bodyClass)
+    //BEGIN out
+    #menu.slideout-menu
+      ul
+        li.active
+          a(href="#") О нас
+        li
+          a(href="#") Арендовать
+        li
+          a(href="#") Поделиться
+        li
+          a(href="#") Контакты
+        li
+          a(href="#")
+            i.icon.icon-user
+    #panel(class=outClass)
+      block header
+        include ../partials/_header
+      block content
+
+      include ../partials/_footer
+    //END out
+
+    //LOAD SCRIPTS
+    block scripts
+      script(src="https://code.jquery.com/jquery-3.3.1.js")
+      script(src="https://cdnjs.cloudflare.com/ajax/libs/slideout/1.0.1/slideout.min.js")
+      script(src="https://unpkg.com/dayjs")
+      script(src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/js/swiper.min.js")
+      script(src="https://cdnjs.cloudflare.com/ajax/libs/air-datepicker/2.2.3/js/datepicker.min.js")
+      script(type="text/javascript" src="js/app.js")
+     

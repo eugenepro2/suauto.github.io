@@ -1,0 +1,34 @@
+section.quote
+  background: $yellow
+  padding: 80px 0px 65px
+  position: relative
+  &.black:before
+    color: black
+  &:before
+    content: '“'
+    top: -55px
+    left: 50%
+    transform: translateX(-50%)
+    position: absolute
+    font-size: 300px
+    line-height: 0.82
+    height: 70px
+    display: block
+    font-family: AndaleMono
+    color: white
+  p
+    font-size: 40px
+    color: white
+    font-weight: bold
+    text-align: center
+    padding: 0 20px
+    +r($small)
+      font-size: 20px
+      padding: 0
+    &.small
+      margin-top: 50px
+      color: black
+      font-size: 28px
+      font-weight: 500
+      +r($small)
+        font-size: 16px

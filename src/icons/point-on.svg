@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="46px" height="70px" viewBox="0 0 46 70" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.6 (67491) - http://www.bohemiancoding.com/sketch -->
+    <title>point-on</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="point-on">
+            <g id="_1948429160912" fill="#000000">
+                <path d="M22.79,0.5 C10.59,0.5 0.57,10.53 0.57,22.99 C0.57,27.05 1.65,31.11 3.55,34.36 C7.34,40.87 22.79,59.83 22.79,59.83 C22.79,59.83 38.23,41.14 42.02,34.37 C43.92,31.12 45,27.06 45,22.99 C45.27,10.53 35.25,0.5 22.79,0.5 Z M22.79,34.64 C16.29,34.64 11.14,29.49 11.14,22.99 C11.14,16.49 16.29,11.07 22.79,11.07 C29.29,11.07 34.44,16.21 34.44,22.71 C34.44,29.22 29.56,34.64 22.79,34.64 Z" id="Shape"></path>
+            </g>
+            <ellipse id="Oval" stroke="#000000" stroke-width="2.38" cx="22.9" cy="58.32" rx="21.23" ry="9.79"></ellipse>
+        </g>
+    </g>
+</svg>

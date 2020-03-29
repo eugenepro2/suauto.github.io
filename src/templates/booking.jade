@@ -1,0 +1,118 @@
+---
+title: Booking Page
+bodyClass: page
+---
+extends layouts/_layout
+block content
+  .booking__page
+    section.booking__page__intro(style="background-image: url('img/booking/intro-bg.jpg')")
+      h1 SOAUTO — сообщество, <br>объединяющее<br> автовладельцев и арендаторов.
+      p Мы не компания по прокату авто,<br> ты получаешь машину непосредственно от её владельца.
+      .d-flex.justify-content-center
+        a.btn.btn-primary(href="#") 
+          img(src="img/car.svg", alt="")
+          | забронировать авто
+    section.booking__page__why
+      .container
+        .row
+          .col-12.d-none.d-sm-none.d-md-block
+            .heading
+              h2 Почему SOAUTO?
+            .booking__page__why__icons
+              i.icon.icon-car
+              span + 
+              i.icon.icon-car
+              span +
+              i.icon.icon-car
+            .booking__page__why__headings
+              h3 Выбор
+                span +
+                | Выгода
+                span +
+                | Простота
+            .booking__page__why__texts
+              p Выбирай из сотен уникальных автомобилей для любого случая и любого бюджета
+              p Забронируй автомобиль, который ты хочешь - до 35% меньше, чем у агентства по прокату автомобилей
+              p Закажи автомобиль из дома или на ходу, когда и где ты захочешь
+          .col-12.d-block.d-md-none
+            .heading
+              h2 Почему SOAUTO?
+            .booking__page__why__block
+              i.icon.icon-car
+              h3 Выбор
+              p Выбирай из сотен уникальных автомобилей для любого случая и любого бюджета
+            .booking__page__why__block
+              i.icon.icon-car
+              h3 Выгода
+              p Выбирай из сотен уникальных автомобилей для любого случая и любого бюджета
+            .booking__page__why__block
+              i.icon.icon-car
+              h3 Простота
+              p Выбирай из сотен уникальных автомобилей для любого случая и любого бюджета
+    section.booking__page__secure
+      .container
+        .row
+          .col-12
+            .heading
+              h2 Ты защищен!
+            i.icon.icon-secure
+            p.yellow Безопасность - наш главный приоритет
+            p 
+              span СТРАХОВОЕ ПОКРЫТИЕ<br>
+              | Мы предоставляем возможность воспользоваться нашей услугой по страхованию.  КАСКО покроет все незапланированные расходы, в случае повреждения авто.
+    section.booking__page__how
+      .container
+        .row
+          .col-12
+            .heading
+              h2 Как это устроено?
+          .col-12.d-flex.justify-content-between.booking__page__how__row
+            .booking__page__how__block
+              div 1
+              h3 Найди идеальный автомобиль
+              p Обзор автомобилей, которыми поделились реальные люди
+            .booking__page__how__block
+              div 2
+              h3 Бронируй
+              p Найди подходящий автомобиль, запроси его или забронируй сразу
+            .booking__page__how__block
+              div 3
+              h3 Забери и отправляйся в путь
+              p Встреться с хозяином, возьми ключи и отправляйся исследовать
+    section.quote
+      .container
+        .row
+          .col-12
+            p Владельцы автомобилей, пользуясь платформой SOAUTO могут окупить все затраты, связанные  с автомобилем: страхование, ТО, ГСМ и другие расходы на владение.
+            p.small Максим Межонис, основатель SOAUTO
+    section.category.category--booking
+      .container
+        .row
+          .col-12
+            h2 Выбирай свое авто
+          .col.d-flex.flex-wrap
+            a(href="#").category__block.black
+              h3 #поделам
+              p бизнес и премиум<br>авто
+              img(src="img/category/black.png", alt="")
+            a(href="#").category__block.yellow
+              h3 #просто
+              p удобные<br>и экономичные
+              img(src="img/category/yellow.png", alt="")
+            a(href="#").category__block.white
+              h3 #длягруза
+              p вместительные
+              img(src="img/category/white.png", alt="")
+            a(href="#").category__block.red
+              h3 #настиле
+              p спорт кары <br>и лакшери авто
+              img(src="img/category/red.png", alt="")
+            a(href="#").category__block.blue
+              h3 #наотдых
+              p отправиться<br>в путешествие
+              img(src="img/category/blue.png", alt="")
+            a(href="#").category__block.grey
+              h3 #сдрузьями
+              p от 6 мест
+              img(src="img/category/grey.png", alt="")
+
